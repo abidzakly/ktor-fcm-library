@@ -13,7 +13,7 @@ android {
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-//        consumerProguardFiles("consumer-rules.pro")
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -53,8 +53,8 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
                 groupId = "com.github.abidzakly"
-                artifactId = "battery-check-aar"
-                version = "1.7"
+                artifactId = "ktor-fcm-library"
+                version = "1.0.2"
             }
         }
     }
