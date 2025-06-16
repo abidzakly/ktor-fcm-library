@@ -42,9 +42,9 @@ dependencies {
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.ktor.client.auth)
     implementation(libs.ktor.client.logging)
-
+    implementation(libs.google.auth.library.oauth2.http)
     implementation(libs.androidx.core.ktx.v1120)
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation(libs.kotlinx.coroutines.android)
 }
 
 afterEvaluate {
